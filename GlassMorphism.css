@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: black;
+  }
+  
+  .background {
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+  
+  .background .shape {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  
+  .shape:first-child {
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(105, 0, 0, 1) 34%,
+      rgba(255, 179, 0, 1) 100%
+    );
+    left: -80px;
+    top: -80px;
+  }
+  .shape:last-child {
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(0, 105, 69, 0.9304971988795518) 34%,
+      rgba(147, 255, 0, 1) 100%
+    );
+    right: -80px;
+    bottom: -80px;
+  }
+  
+  form{
+      height: 520px;
+      width: 400px;
+      background-color: rgba(255,255,255,0.13);
+      position: absolute;
+      transform: translate(-50%,-50%);
+      top: 50%;
+      left: 50%;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      border: 2px solid rgba(255,255,255, 0.1);
+      padding: 50px 35px;
+  }
+  
+  form *{
+      color: white;
+      letter-spacing: 0.5px;
+      outline: none;
+      border: none;
+  
+  }
+  
+  form h2{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+  }
+  
+  label{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  input{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255,255,255, 0.07);
+    border-radius: 2px;
+    padding: 0 10px ;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  ::placeholder{
+    color: white;
+  }
+  
+  
+  .login{
+    margin-top: 30px;
+    width: 100%;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 15px 0;
+    cursor: pointer;
+  
+  }
+  .social{
+    width: 112%;
+    display: inline-block;
+    align-items: center;
+    display: flex;
+  }
+  .social button{
+    display: flex;
+    margin-top: 40px;
+    width: 40%;
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 5px;
+    padding:10px 0px;
+    cursor: pointer;
+    background-color: rgba(255,255,255, 0.07);
+    margin-right: 33px;
+    color: white;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
