@@ -3,13 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign In and Sign Up form</title>
+    <title>Login and Sign Up form</title>
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/fe16061d62.js"
       crossorigin="anonymous"
-    ></script>
-  </head>
+    ></script>  </head>
   <body>
     <div class="container">
       <div class="form-box">
@@ -35,20 +34,20 @@
         </form>
         <div class="btn-field">
             <button type="button" id="signupBtn">Sign Up</button>
-            <button class="disable" id="signinBtn" type="button">Sign In</button>
+            <button class="disable" id="loginBtn" type="button">Login</button>
         </div>
       </div>
     </div>
     <script>
 
    let signupBtn=document.getElementById("signupBtn");
-   let signinBtn=document.getElementById("signinBtn");
+   let signinBtn=document.getElementById("loginBtn");
    let nameField=document.getElementById("nameField");
    let title=document.getElementById("title");
 
-   signinBtn.onclick = function(){
+   loginBtn.onclick = function(){
     nameField.style.maxHeight ="0";
-    title.innerHTML = "Sign In";
+    title.innerHTML = "Login";
     signupBtn.classList.add("disable");
     signinBtn.classList.remove("disable");
    }
